@@ -255,20 +255,27 @@ public class adminHome extends javax.swing.JFrame {
         String name = jTextField2.getText();
         String gender = (String)jComboBox3.getSelectedItem();
         String fathername = (String) jTextField3.getText();
-        try
+        if(roll.equals(""))
         {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","root");
-            
-            Statement st = con.createStatement();
-            st.executeUpdate("insert into student(rollno, course, branchName, name, gender, fathername) values('"+roll+"', '"+course+"', '"+branchName+"', '"+name+"', '"+gender+"', '"+fathername+"') ");
-            JOptionPane.showMessageDialog(null, "Data saved succesfully");
-            setVisible(false);
-            new adminHome().setVisible(true);
+            JOptionPane.showMessageDialog(null, "Please enter valid Roll Number");
         }
-        catch(Exception e)
+        else
         {
-            JOptionPane.showMessageDialog(null, e.toString());
+            try
+            {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","root");
+
+                Statement st = con.createStatement();
+                st.executeUpdate("insert into student(rollno, course, branchName, name, gender, fathername) values('"+roll+"', '"+course+"', '"+branchName+"', '"+name+"', '"+gender+"', '"+fathername+"') ");
+                JOptionPane.showMessageDialog(null, "Data saved succesfully");
+                setVisible(false);
+                new adminHome().setVisible(true);
+            }
+            catch(Exception e)
+            {
+                JOptionPane.showMessageDialog(null, e.toString());
+            }
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
