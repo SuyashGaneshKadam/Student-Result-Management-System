@@ -21,8 +21,8 @@ The student can enter a valid Roll Number and the result for the particular Roll
 
 <img width="523" alt="image" src="https://github.com/SuyashGaneshKadam/Student-Result-Management-System/assets/122480150/2c9ec11d-5210-4bdb-bc15-002e54662ed0">
 
-An admin needs to enter valid credentials and will be logged in to perform the following tasks :-
+An admin needs to enter valid credentials and will be logged in to admin section. After logging in, Admin can perform the following tasks :-
 (a) Add a new entry for a Student.
 (b) Add marks for a Student.
 (c) View all the Students information.
-(d) View all the information about the marks of a Student.
+(d) View the information about the result of a Student.
