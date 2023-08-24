@@ -1,9 +1,8 @@
 # Student-Result-Management-System
-1. Introduction to the Student Result Management System project.
-2. A portal/software for displaying student results.
-3. Addition of admin section for backend management and security features.
-4. Two sections: admin and student, with different permissions and access levels.
-5. Images below gives an overview of the project.
+1. A portal/software for displaying student results.
+2. Addition of admin section for backend management and security features.
+3. Two sections: admin and student, with different permissions and access levels.
+4. Images below gives an overview of the project.
 
 (i) Home page :- 
 
